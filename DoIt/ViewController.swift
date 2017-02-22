@@ -31,8 +31,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let task = tasks[indexPath.row]
+        
         let cell = UITableViewCell ()
-        cell.textLabel?.text = "Hello"
+        // cell.textLabel?.text = "Hello"
+        cell.textLabel?.text = task.name
         return cell
     }
     
