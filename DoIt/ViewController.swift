@@ -30,6 +30,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell.textLabel?.text = "Hello"
         return cell
     }
+    
+    func makeTasks() -> [Task] {
+        
+        // Task #1
+        
+        let task1 = Task ()
+        
+        task1.name = "Walk the dog"
+        
+        task1.important = false
+        
+        
+        // Task #2
+        
+        let task2 = Task ()
+        
+        task2.name = "Buy Chees"
+        
+        task2.important = true
+        
+        
+        // Task #3
+        
+        let task3 = Task ()
+        
+        task3.name = "Mow the Lawn"
+        
+        task3.important = false
+        
+        return [task1, task2, task3]
+        
+    
+    }
+    
+    
 
 }
 
