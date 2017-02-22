@@ -36,7 +36,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let cell = UITableViewCell ()
         // cell.textLabel?.text = "Hello"
-        cell.textLabel?.text = task.name
+        
+        if task.important {
+            
+            cell.textLabel?.text = "❗️\(task.name)"
+            
+        } else {
+            
+            cell.textLabel?.text = task.name
+            
+        }
+        
         return cell
     }
     
