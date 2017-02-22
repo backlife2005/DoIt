@@ -95,8 +95,6 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         let nextVC = segue.destination as! CreateTaskViewController 
         nextVC.previousVC = self
- 
-        
     
     }
 }
