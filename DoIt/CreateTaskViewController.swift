@@ -10,7 +10,7 @@ import UIKit
 
 class CreateTaskViewController: UIViewController {
     
-    let previousVC = TasksViewController ()
+    var previousVC = TasksViewController ()
     
     @IBOutlet weak var taskNameTextField: UITextField!
     
