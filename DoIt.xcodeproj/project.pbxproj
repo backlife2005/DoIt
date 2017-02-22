@@ -14,6 +14,7 @@
 		F7AA20B41E5CFBE900566A0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7AA20B31E5CFBE900566A0A /* Assets.xcassets */; };
 		F7AA20B71E5CFBE900566A0A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7AA20B51E5CFBE900566A0A /* LaunchScreen.storyboard */; };
 		F7AA20BF1E5D0ACB00566A0A /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA20BE1E5D0ACB00566A0A /* Task.swift */; };
+		F7AA20C11E5D900100566A0A /* CreateTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7AA20C01E5D900100566A0A /* CreateTaskViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F7AA20B61E5CFBE900566A0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7AA20B81E5CFBE900566A0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7AA20BE1E5D0ACB00566A0A /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		F7AA20C01E5D900100566A0A /* CreateTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTaskViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F7AA20AB1E5CFBE900566A0A /* ViewController.swift */,
 				F7AA20BE1E5D0ACB00566A0A /* Task.swift */,
 				F7AA20AD1E5CFBE900566A0A /* Main.storyboard */,
+				F7AA20C01E5D900100566A0A /* CreateTaskViewController.swift */,
 				F7AA20B31E5CFBE900566A0A /* Assets.xcassets */,
 				F7AA20B51E5CFBE900566A0A /* LaunchScreen.storyboard */,
 				F7AA20B81E5CFBE900566A0A /* Info.plist */,
@@ -146,6 +149,7 @@
 				F7AA20B21E5CFBE900566A0A /* DoIt.xcdatamodeld in Sources */,
 				F7AA20AC1E5CFBE900566A0A /* ViewController.swift in Sources */,
 				F7AA20AA1E5CFBE900566A0A /* AppDelegate.swift in Sources */,
+				F7AA20C11E5D900100566A0A /* CreateTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
