@@ -26,6 +26,7 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     override func viewWillAppear(_ animated: Bool) {
         getTasks()
+        tableView.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -40,11 +41,11 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         if task.important {
             
-            cell.textLabel?.text = "❗️\(task.name)"
+            cell.textLabel?.text = "❗️\(task.name!)"
             
         } else {
             
-            cell.textLabel?.text = task.name
+            cell.textLabel?.text = task.name!
             
         }
         
