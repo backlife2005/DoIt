@@ -19,9 +19,6 @@ class CompleteTaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        // taskLable.text = task.name
-        
         if task.important {
             
             taskLable.text = "❗️\(task.name)"

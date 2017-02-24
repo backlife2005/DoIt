@@ -20,12 +20,6 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        /* Removed to use CoreData
- 
-        tasks = makeTasks()
- 
-        */
-        
         tableView.dataSource = self
         tableView.delegate = self
     }
@@ -39,7 +33,6 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let task = tasks[indexPath.row]
         
         let cell = UITableViewCell ()
-        // cell.textLabel?.text = "Hello"
         
         if task.important {
             
@@ -64,44 +57,6 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     
-    /* Removed to use CoreData
-     
-     func makeTasks() -> [Task] {
-     
-     // Task #1
-     
-     let task1 = Task ()
-     
-     task1.name = "Walk the dog"
-     
-     task1.important = false
-     
-     
-     // Task #2
-     
-     let task2 = Task ()
-     
-     task2.name = "Buy Chees"
-     
-     task2.important = true
-     
-     
-     // Task #3
-     
-     let task3 = Task ()
-     
-     task3.name = "Mow the Lawn"
-     
-     task3.important = false
-     
-     return [task1, task2, task3]
-     
-     
-     }
-     
-     */
-    
-    
     @IBAction func plusTapped(_ sender: Any) {
         
         performSegue(withIdentifier: "addSegue", sender: nil)
@@ -110,13 +65,6 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        /* Not required anymore. Removed to use CoreData
-        if segue.identifier == "addSegue" {
-            let nextVC = segue.destination as! CreateTaskViewController
-            nextVC.previousVC = self
-        }
-        */
         
         
         if segue.identifier == "selectTaskSegue" {

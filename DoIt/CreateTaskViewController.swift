@@ -10,10 +10,6 @@ import UIKit
 
 class CreateTaskViewController: UIViewController {
     
-    /* Not required anymore. Removed to use CoreData
-    var previousVC = TasksViewController ()
-    */
-    
     @IBOutlet weak var taskNameTextField: UITextField!
     
     
@@ -29,12 +25,6 @@ class CreateTaskViewController: UIViewController {
     
     @IBAction func addTapped(_ sender: Any) {
         
-        // Create a task from the outlet information
-        
-        /* Removed to use CoreData
-        let task = Task ()
-        */
-        
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
         
         let task = Task (context: context)
@@ -43,14 +33,6 @@ class CreateTaskViewController: UIViewController {
         task.important = importantSwitch.isOn
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        
-        
-        // Add a new task the array of the previous View Controller.
-        
-        /* Removed to use CoreData
-        previousVC.tasks.append(task)
-        previousVC.tableView.reloadData()
-         */
         
         navigationController!.popViewController(animated: true)
         
