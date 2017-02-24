@@ -10,7 +10,6 @@ import UIKit
 
 class CompleteTaskViewController: UIViewController {
     
-    var previousVC = TasksViewController ()
     
     @IBOutlet weak var taskLable: UILabel!
     
@@ -32,8 +31,7 @@ class CompleteTaskViewController: UIViewController {
     
     
     @IBAction func completeTapped(_ sender: Any) {
-        previousVC.tasks.remove(at: previousVC.selectedIndex)
-        previousVC.tableView.reloadData()
+
         navigationController!.popViewController(animated: true)
     }
     
