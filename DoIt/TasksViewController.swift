@@ -85,7 +85,9 @@ class TasksViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
         if segue.identifier == "selectTaskSegue" {
+            
             let nextVC = segue.destination as! CompleteTaskViewController
+            
             nextVC.task = sender as? Task
         }
     }

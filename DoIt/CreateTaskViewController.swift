@@ -30,6 +30,7 @@ class CreateTaskViewController: UIViewController {
         let task = Task (context: context)
         
         task.name = taskNameTextField.text!
+        
         task.important = importantSwitch.isOn
         
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
